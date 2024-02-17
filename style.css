@@ -1,6 +1,7 @@
 body{
- background-color: blueviolet;
+ margin: 5%;
+ padding: 10px;
 }
-h1{
- color: aqua;
+.bus{
+ border: 2px solid #1dd100;
 }

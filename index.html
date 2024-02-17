@@ -12,7 +12,84 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
- 
+<!-- this is navbar start -->
+<div class="navbar ">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0"  class=" lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  w-52">
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Destination</a></li>
+        <li><a>Search</a></li>
+      </ul>
+    </div> 
+    <a class="text-[25px] font-bold "><strong>P-Ticket</strong></a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+ <ul class="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Destination</a></li>
+        <li><a>Search</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end ">
+    <a class="btn text-[#1dd100]  border-[#1DD100]  bg-[#ccf4c6] ">Bus <img src="images/bus-icon.png" alt=""></a>
+  </div>
+</div>
+<!-- this is navbar end -->
+<!-- This is Banner section start -->
+<section class="bg-[url('./images/banner.png')] bg-cover bg-center bg-no-repeat  h-[80vh] rounded-xl text-center">
+  <div class="flex flex-col gap-5 items-center justify-center py-[200px]">
+    <h2 class="font-bold text-6xl py-3">End-to-End Travel with </h2>
+    <h2 class="text-[#1DD100] font-bold text-6xl">P Paribahan</h2>
+    <p class="text-white py-3">
+      To ensure fastest communication among transport business network and travelers<br>with advance security and administrative control,
+       to gain faster and secured growth of business with larger customer segment.
+    </p>
+    <a href="#buyTicket" class="btn bg-[#1DD100] text-black font-bold border-none py-3">Buy Ticket</a>
+  </div>
+</section>
+<!-- This is Banner section end -->
+
+  <!-- This is  best offer start -->
+  <div>
+  
+    <div class="flex flex-col w-full gap-10 my-10">
+      <h1 class="m-auto font-bold text-3xl">Best offers for you</h1>
+      <div class="flex justify-between gap-10">
+        <div class="flex bg-[#FFBF0F] items-center justify-around rounded-2xl w-full">
+          <div>
+            <h1 class="font-bold text-3xl"><strong>15</strong>% <strong> OFF</strong></h1>
+            <p class="font-bold">on your next purchase</p>
+            <p class="text-[#4b587c]">use by January 2024</p>
+          </div>
+         <img src="images/cupon-devider.png" alt="">
+          <div class="text-center">
+            <h1 class="font-bold text-2xl">NEW15</h1>
+            <p class="text-[#3a435a]">Coupon Code</p>
+          </div>
+        </div>
+
+        <div class="flex bg-[#F78C9C] items-center justify-around rounded-2xl w-full">
+          <div>
+            <h1 class="font-bold text-3xl"><strong>20</strong>% <strong> OFF</strong></h1>
+            <p class="font-bold">on your next purchas</p>
+            <p class="text-[#4b587c]">use by January 2024</p>
+          </div>
+        <img src="images/cupon-devider.png" alt="">
+          <div class="text-center">
+            <h1 class="font-bold text-2xl">Couple 20</h1>
+            <p class="text-[#3a435a]">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <a class="btn m-auto bg-white border border-[#1DD100] text-[#1DD100] font-bold">See All Offers</a>
+    </div>
+    <!-- best offer end -->
  <script src="script.js"></script>
 </body>
 </html>
