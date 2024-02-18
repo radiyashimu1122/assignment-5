@@ -15,7 +15,7 @@
 </head>
 <body>
 <!-- this is navbar start -->
-<div class="navbar ">
+<div class="navbar">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0"  class=" lg:hidden">
@@ -143,9 +143,7 @@
   </div>
 </section>
 <!-- This is PH paribahan section end -->
- <!-- start seat plan container -->
  <div class="bg-white p-10 rounded-xl flex gap-10">
-  <!-- This is  seat plan  start-->
   <div class="w-[60%]">
     <p id="max-ticket" class="text-red-700"></p>
     <div>
@@ -198,7 +196,6 @@
       </div>
     </div>
   </div>
-  <!-- This is  seat plan end-->
   <div class="w-[40%]">
     <div class="border-b border-black border-dashed pb-5 font-bold text-xl">
       <h1>Select Your Seat</h1>
@@ -206,7 +203,7 @@
     <div class="p-5 my-5 bg-[#F7F8F8] rounded-xl">
       <table class="w-full">
         <tr class="flex justify-between">
-          <th>Seat <span id="availableSeat" class="bg-[#1DD100] text-white">0</span></th>
+          <th>Seat <span id="receivableseat" class="bg-[#1DD100] text-white">0</span></th>
           <th>Class</th>
           <th>Price</th>
         </tr>
@@ -219,27 +216,22 @@
           </tr>
         </tfoot>
       </table>
-
       <div id="coupon-container" class="my-10">
         <div class="flex gap-5">
-          <input type="text" disabled="true" id="coupon-field" class="input input-bordered w-full" placeholder="Have any coupon?">
+          <input type="text" disabled="true" id="applycoupon" class="input input-bordered w-full" placeholder="Have any coupon?">
           <button id="coupon-btn" class="btn w-36 bg-[#1DD100] text-white font-bold" disabled="true">Apply</button>
         </div>
-        <p id="invalid" class="text-red-700 hidden">Invalid coupon code</p>
+        <p id="invalid" class="text-red-700 hidden">Invalid</p>
       </div>
-
       <div id="discount-container" class="flex justify-between font-bold text-[#1DD100] hidden">
         <p>Discounted Price</p>
         <p>BDT <span id="discount">0</span></p>
       </div>
-
       <div class="flex justify-between font-bold">
         <p>Grand Total</p>
         <p>BDT <span id="grand-total">0</span></p>
       </div>
-
     </div>
-
     <div>
       <form class="flex flex-col gap-5">
         <div class="flex flex-col">
@@ -263,25 +255,52 @@
               <p class="font-semibold">Thank you for Booking Our Bus Seats. 
                 We are working hard to find the best service and deals for you.</p>
               <p>Shortly you will find a confirmation in your email.</p>
-              
                 <button type="button" class="text-white btn w-full bg-[#27AE60]">Continue</button>
-              
             </div>
           </div>
         </dialog>
       </form>
     </div>
-
     <div class="flex justify-between my-10">
       <a class="underline" href="#">Terms and Conditions</a>
       <a class="underline" href="#">Cancellation Policy</a>
     </div>
-
   </div>
 </div>
-<!-- end seat plan container -->
 </div>
 </section>
+<!-- This is footer start -->
+  <footer class="bg-black text-white">
+    <div class="container mx-auto p-8 md:p-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h1 class="text-2xl font-bold mb-4">P-Ticket</h1>
+          <p class="text-base">P-Ticket is a digital platform to make your<br> daily commuting better</p>
+        </div>
+        <div>
+          <h6 class="font-bold mb-4">Download our app</h6>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a href="#" class="btn bg-black text-white flex items-center">
+              <img src="images/playstore.png" alt="" class="mr-2">
+              <strong>Download our app</strong>
+            </a>
+           </div>
+          </div>
+          </div>
+      <div class="border-t border-dashed border-white mt-8 "></div>
+    </div>
+    <div class="flex justify-between items-center container mx-auto p-8 md:p-10">
+      <div class="flex">
+          <p>@all rights reserved, P-Ticket services limited. 2024</p>
+      </div>
+      <ul class="flex">
+          <li class="mr-4"><strong>Terms & conditions</strong></li>
+          <li class="mr-4"><strong>Return & refund policy</strong></li>
+          <li><strong>Privacy policy</strong></li>
+      </ul>
+  </div>
+  </footer>
+  <!-- This is footer end -->
  <script src="script.js"></script>
 </body>
 </html>

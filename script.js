@@ -1,11 +1,11 @@
 
 
 const seats = document.getElementsByClassName("seat");
-const availableSeat = document.getElementById("availableSeat");
+const receivableSeat = document.getElementById("receivableseat");
 const total = document.getElementById("total");
 const leftbutton = document.getElementById("left-button");
 const maxTicket = document.getElementById("max-ticket");
-const couponField = document.getElementById("coupon-field");
+const applyCoupon = document.getElementById("applycoupon");
 const couponBtn = document.getElementById("coupon-btn");
 const discountContainer = document.getElementById('discount-container');
 const discountText = document.getElementById('discount');
@@ -27,8 +27,8 @@ for (const seat of seats) {
     tr.innerHTML = `
             <td>${e.target.innerText}</td>
             <td>Economics</td>
-            <td>550</td>
-        `;
+            <td>550</td>`;
+        
     tbody.appendChild(tr);
 
     seatCount++;
@@ -37,52 +37,44 @@ for (const seat of seats) {
     seat.disabled = true;
     phoneNumber.disabled = false
  
-    availableSeat.innerText = seatCount;
+    receivableseat.innerText = seatCount;
     total.innerText = totalTk;
     leftbutton.innerText = seatAvailAble;
     grandTotal.innerText = totalTk
-
     if (seatCount >= 4) {
       for (const seat of seats) {
         seat.disabled = true;
-        maxTicket.innerText = "Ticket reach out";
-        couponField.disabled = false;
+        maxTicket.innerText = "Sorry you can't select more than four seats";
+        applycoupon.disabled = false;
         couponBtn.disabled = false;
       }
     }
-
   });
 }
-
-
 couponBtn.addEventListener('click', function(){
-    const coupon = couponField.value;
+    const coupon = applycoupon.value;
     if(coupon === 'NEW15' || coupon === 'Couple 20'){
         if(coupon === 'NEW15'){
             const discount = totalTk*0.15;
             discountContainer.classList.remove('hidden');
             discountText.innerText = discount;
             couponContainer.classList.add('hidden');
-
             const totalPrice = totalTk - discount;
             grandTotal.innerText = totalPrice
         }
-
         if(coupon === 'Couple 20'){
             const discount = totalTk * 0.2;
             discountContainer.classList.remove('hidden');
             discountText.innerText = discount;
             couponContainer.classList.add('hidden');
 
-            const totalPrice = totalTk - discount;
-            grandTotal.innerText = totalPrice
+            const Price = Tk - discount;
+            grandTotal.innerText = Price
             
         }
     }else{
         document.getElementById('invalid').classList.remove('hidden')
     }
-
-    
 })
 
 phoneNumber.addEventListener('input',function (){
